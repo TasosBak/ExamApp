@@ -135,6 +135,8 @@ public class FetchMerchantsTask extends AsyncTask<String,Void,ArrayList<Merchant
         if(merchants.size() > 0){
             this.merchantAdapter.clear();
 
+            //ligo mpakaliko alla ksekinhsa na grafw 45 lepta meta epeidh
+            //den anoige to android studio se 7 upologistes pou to dokimasa
             for (int i=0; i<merchants.size();i++)
                 merchantAdapter.insert(merchants.get(i), i);
         }
