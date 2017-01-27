@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/image_view_logo"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1.47"
+        android:paddingTop="15dp"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:text="Legal Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/legal_name"
+            android:textSize="18sp"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:text="merchant category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/merchant_category" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+
+            <TextView
+                android:text="contact point"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:id="@+id/contact_point"
+                android:layout_weight="4" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/star"
+                android:id="@+id/image_view_rating"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
